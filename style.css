@@ -476,3 +476,32 @@ body{
     padding: 20px;
   }
 }
+/* Hide hamburger on desktop */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ededed;
+}
+
+/* Mobile menu styles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* show hamburger */
+  }
+  .navbar {
+    display: none; /* hide desktop menu */
+    flex-direction: column;
+    background: #081b29;
+    width: 100%;
+    padding: 10px;
+  }
+  .navbar a {
+    margin: 10px 0;
+    text-align: center;
+    display: block;
+  }
+  .navbar.active {
+    display: flex; /* show menu when active */
+  }
+}
