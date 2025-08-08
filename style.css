@@ -396,6 +396,7 @@ body{
   }
   .navbar a {
     margin-left: 0;
+    color: white;
   }
 
   /* Home section stacks vertically */
