@@ -377,3 +377,102 @@ body{
 .form-submit button:hover {
     background-color: #0056b3;
 }
+
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+@media (max-width: 768px) {
+  
+  /* Reduce header padding and stack navbar */
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .navbar a {
+    margin-left: 0;
+  }
+
+  /* Home section stacks vertically */
+  .home {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+  }
+  .home-content h1 {
+    font-size: 32px;
+  }
+  .home-content h3 {
+    font-size: 22px;
+  }
+  .btn-box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 10px;
+  }
+  .btn-box a {
+    width: 100%;
+  }
+  .home-sci {
+    position: static;
+    margin-top: 20px;
+  }
+
+  /* About section stacks */
+  .about {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .row-content {
+    width: 100%;
+  }
+
+  /* Skills section */
+  .skills {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    max-height: none;
+    overflow-y: visible;
+  }
+  .skill {
+    min-width: auto;
+    min-height: auto;
+    text-align: center;
+  }
+
+  /* Projects horizontal scroll fits */
+  .projects {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .pro {
+    max-width: 100%;
+  }
+
+  /* Contact form adjusts */
+  .contacts {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .form {
+    min-width: auto;
+    width: 100%;
+    padding: 20px;
+  }
+}
