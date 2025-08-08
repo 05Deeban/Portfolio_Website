@@ -402,6 +402,7 @@ body{
 
   /* Home section stacks vertically */
   .home {
+    margin-top: 30px;
     flex-direction: column;
     padding: 20px;
     text-align: center;
